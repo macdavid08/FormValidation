@@ -1,19 +1,13 @@
 $(document).ready (()=> {
 
-  
-
     $(".send").click(function (){
         
         validateName()
         validatMail()
         validatNumb()
         validatPassword()
-       
-    
+      
     })
-
-  
-
 
     let validateName = ()=>{
         
@@ -49,8 +43,7 @@ $(document).ready (()=> {
             }else{
                 $("#phone").val("")
         }
-       
-
+      
     }
 
     let validatPassword = ()=> {
@@ -63,10 +56,7 @@ $(document).ready (()=> {
                 $("#password").val("")
         }
        
-
     }
-
-
 
     $("#name").keyup(()=>{
         nameChk()
@@ -81,20 +71,15 @@ $(document).ready (()=> {
            
             $("#name").css("border", "1px solid red")
             $(".txt").text("Only texts allowed")
-            $(".txt").addClass("style").fadeOut(2000)
+            $(".txt").addClass("style")
             
         }else {
             $("#name").css("border", "1px solid green")
             $(".txt").remove("")
             $(".send").css("background","rgb(2, 2, 107)")
 
-     
         }
 
-       
-
-
-    
     }
 
 
@@ -109,13 +94,11 @@ $(document).ready (()=> {
 
         let passwordRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
 
-        
-
         if (!passwordRegex.test(password)) {
 
             $("#password").css("border", "1px solid red")
             $(".txt1").text("Password not Valid ")
-            $(".txt1").addClass("style").fadeOut(2000)
+            $(".txt1").addClass("style")
 
             return
            
@@ -141,7 +124,7 @@ $(document).ready (()=> {
         if(!numbRegex.test(numb)) {
             $("#phone").css("border", "1px solid red")
             $(".pNumb").text("Number cant be less than 11 digits or greater than")
-            $(".pNumb").addClass("style").fadeOut(2000)
+            $(".pNumb").addClass("style")
            
 
         }else{
@@ -166,7 +149,7 @@ $(document).ready (()=> {
         if (!mailRegex.test(email)) {
             $("#mail").css("border", "1px solid red")
             $(".mail-txt").text("Email not valid")
-            $(".mail-txt").addClass("style").fadeOut(2000)
+            $(".mail-txt").addClass("style")
             return
         }else {
             $("#mail").css("border", "1px solid green")
@@ -174,10 +157,7 @@ $(document).ready (()=> {
 
         }
     }
-    
-
-   
-
+ 
 })    
 
 

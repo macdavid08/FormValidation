@@ -97,7 +97,7 @@ $(document).ready (()=> {
         if (!passwordRegex.test(password)) {
 
             $("#password").css("border", "1px solid red")
-            $(".txt1").text("Password not Valid ")
+            $(".txt1").text("Password must contain at least 1 uppercas, lowercase number and special character. ")
             $(".txt1").addClass("style")
 
             return

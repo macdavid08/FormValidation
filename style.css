@@ -91,3 +91,21 @@ label {
 .form input[value= "submit"]{
     box-shadow: none;
 }
+
+
+@media only screen and (max-width:800px) {
+    body {
+        height: 100vh;
+        position: absolute;
+    }
+    
+    #formValid {
+        position: relative;
+        top: 20%;
+        width: 90%;
+        height:auto;
+        background: linear-gradient(135deg, #71b7e6, #9b59b6);
+    }
+
+    
+}

@@ -12,7 +12,7 @@
     let validateName = ()=>{
         
         if($("#name").val() == ''){
-            $(".txt").text(" Space can't be empty")
+            $(".txt").text("Enter your name")
             $(".txt").addClass("style")
             $("#name").css("border", "1px solid red")
             }else{
@@ -25,7 +25,7 @@
 
        
         if($("#mail").val() == ''){
-            $(".mail-txt").text(" Space can't be empty")
+            $(".mail-txt").text("Enter your e-mail address")
             $(".mail-txt").addClass("style")
             $("#mail").css("border", "1px solid red")
             }else{
@@ -37,7 +37,7 @@
     let validatNumb = ()=> {
 
         if($("#phone").val() == ''){
-            $(".pNumb").text(" Space can't be empty")
+            $(".pNumb").text("Enter your phone number")
             $(".pNumb").addClass("style")
             $("#phone").css("border", "1px solid red")
             }else{
@@ -49,7 +49,7 @@
     let validatPassword = ()=> {
 
         if($("#password").val() == ''){
-            $(".txt1").text(" Space can't be empty")
+            $(".txt1").text(" Enter your password")
             $(".txt1").addClass("style")
             $("#password").css("border", "1px solid red")
             }else{
@@ -97,7 +97,7 @@
         if (!passwordRegex.test(password)) {
 
             $("#password").css("border", "1px solid red")
-            $(".txt1").text("Password must contain at least 1 uppercas, lowercase number and special character. ")
+            $(".txt1").text("Password must contain at least 1 uppercase, lowercase number and special character. ")
             $(".txt1").addClass("style")
 
             return
@@ -123,7 +123,7 @@
 
         if(!numbRegex.test(numb)) {
             $("#phone").css("border", "1px solid red")
-            $(".pNumb").text("Number cant be less than 11 digits or greater than")
+            $(".pNumb").text("Only numbers accepted")
             $(".pNumb").addClass("style")
            
 

@@ -124,6 +124,9 @@ label {
         padding: 5px 6px;
 
     }
+    .send {
+        padding: 10px 10px;
+    }
 
 }
 
@@ -173,6 +176,10 @@ label {
         margin-top: 5px;
         padding: 5px 6px;
 
+    }
+
+    .send {
+        padding: 10px 10px;
     }
 
     

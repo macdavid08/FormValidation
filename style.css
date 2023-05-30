@@ -1,187 +1,179 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 body {
-    width: 100%;
-    font-size: 12px;
+  width: 100%;
+  font-size: 12px;
 }
 
-h3{
-    text-align: center;
-    font-size: 20px;
+h3 {
+  text-align: center;
+  font-size: 20px;
 }
 
 #formValid {
-    padding: 30px 20px;
-    width: 50%;
-    margin: 30px auto;
-    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+  padding: 30px 20px;
+  width: 50%;
+  margin: 30px auto;
+  background: linear-gradient(135deg, #71b7e6, #9b59b6);
 }
 
 .form input {
-    width: 100%;
-    height: 25px;
-    padding: 10px 5px;
-    border: none;
-    border-radius: 2px ;
-    font-size: 10px;
-    outline: none;
+  width: 100%;
+  height: 25px;
+  padding: 10px 5px;
+  border: none;
+  border-radius: 2px;
+  font-size: 10px;
+  outline: none;
 }
 
 .form input:focus {
-    box-shadow: 2px 2px 2px  rgb(79, 79, 79);
-
+  box-shadow: 2px 2px 2px rgb(79, 79, 79);
 }
 
 .form input::placeholder {
-    font-size: 8px;
-    padding: 2px;
+  font-size: 8px;
+  padding: 2px;
 }
 
 label {
-    display: block;
-    margin: 3px 0;
+  display: block;
+  margin: 3px 0;
 }
 
 .style {
-    margin: none;
-    margin-top: 5px;
-    padding: 3px 6px;
-    border-radius: 3px;
-    background-color:#663679 ;
-    color: white;
-    font-size: 10px;
-    width: 100%;
-    box-sizing: border-box;
-    line-height: 14px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  margin: none;
+  margin-top: 5px;
+  padding: 3px 6px;
+  border-radius: 3px;
+  background-color: #663679;
+  color: white;
+  font-size: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  line-height: 14px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
-
-
 
 .send {
-    margin-top: 10px;
-    padding: 10px 10px;
-    width: 100%;
-    border: none;
-    background-color: rgb(2, 2, 107);
-    border-radius: 3px;
-    color: white;
-    text-transform: uppercase;
-    font-size: 12px;
-    cursor: pointer;
+  margin-top: 10px;
+  padding: 10px 10px;
+  width: 100%;
+  border: none;
+  background-color: rgb(2, 2, 107);
+  border-radius: 3px;
+  color: white;
+  text-transform: uppercase;
+  font-size: 12px;
+  cursor: pointer;
+}
+.send:disabled {
+  background-color: rgba(0, 0, 0, 0.694);
+  color: white;
 }
 
-.form input[value= "submit"]{
-    box-shadow: none;
-    margin: none;
+.form input[value="submit"] {
+  box-shadow: none;
+  margin: none;
 }
-
-
 
 /* Mobile Design */
 
-@media only screen and (max-width:640px) {
-    body {
-        position: absolute;
-    }
-    
-    #formValid {
-        position: relative;
-        width: 90%;
-        height:100%;
-        border-radius: 10px;
-    }
+@media only screen and (max-width: 640px) {
+  body {
+    position: absolute;
+  }
 
-    h3{
-        font-size: 24px;
-    }
+  #formValid {
+    position: relative;
+    width: 90%;
+    height: 100%;
+    border-radius: 10px;
+  }
 
-    .form{
-        padding: 20px 0;
-    }
+  h3 {
+    font-size: 24px;
+  }
 
-    .form input {
-        padding: 20px 5px;
-        border-radius: 3px ;
-        font-size: 15px;
-    }
+  .form {
+    padding: 20px 0;
+  }
 
-    label {
-        margin: 5px 0;
-        font-size: 15px;
-    }
+  .form input {
+    padding: 20px 5px;
+    border-radius: 3px;
+    font-size: 15px;
+  }
 
-    .form input::placeholder {
-        font-size: 12px;
-        padding: 3px;
-    }
+  label {
+    margin: 5px 0;
+    font-size: 15px;
+  }
 
-    .style {
-        margin-top: 3px;
-        padding: 5px 6px;
+  .form input::placeholder {
+    font-size: 12px;
+    padding: 3px;
+  }
 
-    }
-    .send {
-        padding: 10px 10px;
-    }
-
+  .style {
+    margin-top: 3px;
+    padding: 5px 6px;
+  }
+  .send {
+    padding: 10px 10px;
+  }
 }
 
-    /* Tablet Design */
+/* Tablet Design */
 
-@media only screen and (max-width:768px) {
+@media only screen and (max-width: 768px) {
+  body {
+    position: absolute;
+  }
 
-    body {
-        position: absolute;
-    }
-    
-    #formValid {
-        position: relative;
-        width: 90%;
-        height:100%;
-        border-radius: 10px;
-    }
+  #formValid {
+    position: relative;
+    width: 90%;
+    height: 100%;
+    border-radius: 10px;
+  }
 
-    h3{
-        font-size: 30px;
-        
-    }
+  h3 {
+    font-size: 30px;
+  }
 
-    .form{
-        padding: 20px 0;
-    }
+  .form {
+    padding: 20px 0;
+  }
 
-    .form input {
-        padding: 20px 5px;
-        border-radius: 3px ;
-        font-size: 15px;
-    }
+  .form input {
+    padding: 20px 5px;
+    border-radius: 3px;
+    font-size: 15px;
+  }
 
-    label {
-        margin: 3px 0;
-        font-size: 20px;
-        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    }
+  label {
+    margin: 3px 0;
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  }
 
-    .form input::placeholder {
-        font-size: 12px;
-        padding: 3px;
-    }
+  .form input::placeholder {
+    font-size: 12px;
+    padding: 3px;
+  }
 
-    
-    .style {
-        margin-top: 5px;
-        padding: 5px 6px;
+  .style {
+    margin-top: 5px;
+    padding: 5px 6px;
+  }
 
-    }
-
-    .send {
-        padding: 10px 10px;
-    }
-
-    
+  .send {
+    padding: 10px 10px;
+  }
 }
